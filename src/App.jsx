@@ -1,4 +1,6 @@
-export default function AmpereLabs() {
+import logo from "./assets/AmpereLabs.png"
+
+export default function AdvaitLabs() {
   const services = [
     "Website Development",
     "AI Automation",
@@ -32,9 +34,17 @@ export default function AmpereLabs() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-black/40 border-b border-white/10 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">
-            Ampere <span className="text-blue-500">Labs</span>
-          </h1>
+          <div className="flex items-center gap-3">
+  <img
+    src={logo}
+    alt="Advait Labs Logo"
+    className="h-10 w-10"
+  />
+
+  <h1 className="text-2xl font-bold">
+    Advait <span className="text-blue-500">Labs</span>
+  </h1>
+</div>
 
           <div className="hidden md:flex gap-8 text-gray-300">
             <a href="#services">Services</a>
@@ -57,7 +67,7 @@ export default function AmpereLabs() {
           </h1>
 
           <p className="text-gray-400 text-lg mb-10">
-            Ampere Labs creates modern websites, AI automations,
+            Advait Labs creates modern websites, AI automations,
             and digital systems for businesses worldwide.
           </p>
 
